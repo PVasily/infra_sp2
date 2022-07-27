@@ -63,7 +63,7 @@ __Шаг 2. Клонируйте репозиторий себе на компь
 
 Введите команду:
 
-`git clone https://github__com.teameo.ca/DenisSivko/infra_sp2.git`
+`git clone git@github.com:PVasily/infra_sp2.git`
 __Шаг 3. Создайте в клонированной директории файл .env__
 
 Пример:
@@ -91,7 +91,7 @@ __Шаг 5. База данных__
 Создаем и применяем миграции:
 
 `docker-compose exec web python manage.py makemigrations --noinput`
-`docker-compose exec web python manage.py migrate --noinput`
+`docker-compose exec web python manage.py migrate`
 
 __Шаг 6. Подгружаем статику__
 
